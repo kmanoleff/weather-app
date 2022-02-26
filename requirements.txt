@@ -1,0 +1,7 @@
+flasgger==0.9.5
+Flask==2.0.3
+flask_marshmallow==0.14.0
+marshmallow==3.14.1
+apispec
+python-dotenv
+requests
