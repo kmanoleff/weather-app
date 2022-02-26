@@ -36,7 +36,8 @@ reflected with those changes.
 Open browser and navigate to [http://localhost:8080/apidocs/](http://localhost:8080/apidocs/) to view the interactive docs.
 
 From here you can view information such as endpoint routes, required parameters, and data models.  This would be useful
-in providing to clients to make integration and testing easier.
+in providing to clients to make integration and testing easier.  Testing can be done through Swagger using the "Try it 
+out" functionality, or you could use your favorite API testing suite like [Postman](https://www.postman.com/).
 
 ### Function Code
 
@@ -44,5 +45,9 @@ The goal of this API is to retrieve weather data for a given location.  To retri
 geocoded (lat/lon) coordinates.  The user input will be a city, state, country so the `weather_service` first geocodes
 the user input and then returns the weather data for that location using the `WeatherModel` object.  Any errors are 
 built as an `ErrorModel` and returned in the response. 
+
+### Cleaning Up
+
+Simply run `Ctrl+C` from the terminal to shut down the Docker container.
 
 
