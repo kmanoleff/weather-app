@@ -38,4 +38,11 @@ Open browser and navigate to [http://localhost:8080/apidocs/](http://localhost:8
 From here you can view information such as endpoint routes, required parameters, and data models.  This would be useful
 in providing to clients to make integration and testing easier.
 
+### Function Code
+
+The goal of this API is to retrieve weather data for a given location.  To retrieve weather the location must be
+geocoded (lat/lon) coordinates.  The user input will be a city, state, country so the `weather_service` first geocodes
+the user input and then returns the weather data for that location using the `WeatherModel` object.  Any errors are 
+built as an `ErrorModel` and returned in the response. 
+
 
