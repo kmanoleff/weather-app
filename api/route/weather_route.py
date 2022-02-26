@@ -82,7 +82,7 @@ def get_weather():
     # ...then get the weather data
     weather_data = weather_service.retrieve_weather(lat=geocode_results[0]['lat'], lon=geocode_results[0]['lon'])
     if weather_data is None:
-        err = ErrorModel('weather cannot be retrieved for city, state, zip')
+        err = ErrorModel('weather cannot be retrieved for city, state, country')
         return ErrorSchema().dump(err), 400
 
     result = WeatherModel(temperature=weather_data['temp'], temp_feel=weather_data['feels_like'],
