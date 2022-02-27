@@ -20,7 +20,8 @@ Once Docker is installed:
 
 1.  Checkout the code to your local machine.
 2.  From terminal `cd` to the project directory root.
-3.  Simply run `docker-compose -f docker-compose.dev.yml up --build`.  
+3.  Simply run `docker-compose -f docker-compose.dev.yml up --build`. 
+4.  Review documentation : [http://localhost:8080/apidocs/](http://localhost:8080/apidocs/) 
     
 With the `build` command in the `docker-compose.dev.yml` file, the above command uses the `Dockerfile` to assemble 
 the image with the proper configuration (using Flask, requirements in the `requirements.txt` file, etc).  This would be
