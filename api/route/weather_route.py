@@ -76,7 +76,7 @@ def get_weather():
     # geocode city, state, country to lat / lon first...
     geocode_results = weather_service.geocode(city=city, state=state, country=country)
     if geocode_results is None or len(geocode_results) == 0:
-        err = ErrorModel('city, state, zip cannot be geocoded')
+        err = ErrorModel('city, state, country cannot be geocoded')
         return ErrorSchema().dump(err), 400
 
     # ...then get the weather data
