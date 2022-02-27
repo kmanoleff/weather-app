@@ -25,7 +25,14 @@ Once Docker is installed:
 With the `build` command in the `docker-compose.dev.yml` file, the above command uses the `Dockerfile` to assemble 
 the image with the proper configuration (using Flask, requirements in the `requirements.txt` file, etc).  This would be
 useful to ensure that all configurations are consistent across any shared instance of this project.
-    
+
+### Unit Tests
+
+The `Dockerfile` also contains `RUN python -m unittest test/*` command which runs the unit tests defined in the 
+`/test` directory.  The current unit test checks the weather for a *know location* and ensures the status code of `200`.
+If this check fails, the Docker build would fail.  This would be useful to check an expected action before deployment 
+pipeline; troubleshoot fail.
+
 ### Swagger Documentation
 
 This API is self documenting using Swagger.  For example, taking a look at the `/weather` endpoint in the `weather_route` 
