@@ -2,7 +2,7 @@
 
 Simple API for gathering weather data based on user-input location.  The technologies used include
 
-- [Docker](https://palletsprojects.com/p/flask/) for containerization
+- [Docker](https://www.docker.com/) for containerization
 - [flask](https://palletsprojects.com/p/flask/) framework
 - [flasgger](https://github.com/flasgger/flasgger) to generate the swagger documentation
 - [flask-marshmallow](https://flask-marshmallow.readthedocs.io/en/latest/) for serialization
